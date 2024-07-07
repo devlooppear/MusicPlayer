@@ -1,0 +1,121 @@
+/* Estilos Globais */
+body {
+  background-image: linear-gradient(rgb(59, 88, 93), rgb(29, 40, 42));
+  height: 100vh;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+/* Container Principal */
+.music-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 18px auto;
+  padding: 12px;
+  height: 100vh;
+}
+
+/* Estilos de Texto */
+h4 {
+  color: black;
+  font-size: 1.5em;
+}
+
+#playlist-title {
+  display: flex;
+  justify-content: center;
+}
+
+#song-name {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.light-color {
+  color: rgb(139, 153, 156);
+}
+
+/* Estilos de Botões */
+button {
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.button {
+  font-size: 1.5em;
+}
+
+.button-navigate {
+  font-size: 3em;
+}
+
+.button-biggest {
+  font-size: 4em;
+}
+
+.button-active {
+  color: rgb(0, 183, 107);
+}
+
+/* Layout de Botões */
+#below-cover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Estilos de Imagem */
+#cover {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 450px;
+  border: 3px solid white;
+}
+
+@media (max-width: 680px) {
+  #cover {
+    width: 90%;
+  }
+}
+
+/* Barra de Progresso */
+#progress-container {
+  cursor: pointer;
+}
+
+#progress-bar {
+  background-color: rgb(139, 153, 156);
+  height: 3px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+#current-progress {
+  --progress: 0%;
+  background-color: white;
+  height: inherit;
+  width: var(--progress);
+  border-radius: inherit;
+}
+
+/* Caixa de Tempo */
+#time-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  color: rgb(139, 153, 156);
+}
